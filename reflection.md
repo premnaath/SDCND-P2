@@ -375,7 +375,7 @@ Softmax probability for the first image 2, no passing is listed below,
 |  |  |
 |  |  |
 
-The probability for yield is exactly one and it can be stated that the traffic
+The probability for no passing is exactly one and it can be stated that the traffic
 sign, no passing has been predicted with the maximum probability.
 
 Softmax probability for the first image 3, speed limit 20km/h is listed below,
@@ -390,7 +390,7 @@ Softmax probability for the first image 3, speed limit 20km/h is listed below,
 |  |  |
 |  |  |
 
-The probability for yield is exactly one and it can be stated that the traffic
+The probability for speed limit 20 km/h is almost one and it can be stated that the traffic
 sign, speed limit 20 km/h has been predicted with the maximum probability.
 
 Softmax probability for the first image 4, go straight or right is listed below,
@@ -405,7 +405,7 @@ Softmax probability for the first image 4, go straight or right is listed below,
 |  |  |
 |  |  |
 
-The probability for yield is exactly one and it can be stated that the traffic
+The probability for go straight or right is almost one and it can be stated that the traffic
 sign, go straight or right has been predicted with the maximum probability.
 
 Softmax probability for the first image 5, roundabout is listed below,
@@ -420,7 +420,7 @@ Softmax probability for the first image 5, roundabout is listed below,
 |  |  |
 |  |  |
 
-The probability for yield is exactly one and it can be stated that the traffic
+The probability for roundabout is almost one and it can be stated that the traffic
 sign, roundabout has been predicted with the maximum probability.
 
 Thus it has been verified that the trained model classifies a small set of
@@ -430,7 +430,9 @@ traffic signs randomly picked from the web.
 A robust architecture with Convolutional Neural Network has been developed and
 trained with a training data provided. The trained model has been validated with
 the provided validation set and was found to improve validation accuracy with
-each epoch. The models performance was also checked against the provided test
-set and on randomly picked German traffic images from the internet.
+each epoch. The requirement of a minimum validation accuracy of 93% was reached
+with the remodelled architecture and tuned hyperparameters. The model proved its
+performance on the provided test set and on randomly picked German traffic images
+from the internet with an accuracy of approximately 94% and 100% respectively.
 
 
